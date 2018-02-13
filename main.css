@@ -1,0 +1,24 @@
+@import 'reset.css';
+
+body {
+
+}
+
+header {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  background-color: #f6c049;
+}
+
+.header__top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+}
+
+section {
+  background-color: black;
+  height: 100vh;
+}

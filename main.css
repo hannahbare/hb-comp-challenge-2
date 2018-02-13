@@ -1,13 +1,14 @@
 @import 'reset.css';
 
 body {
-
+  background-color: black;
+  font-size: 16px;
+  height: 100vh;
 }
 
 header {
   position: relative;
-  height: 150px;
-  width: 100%;
+  height: 15%;
   background-color: #f6c049;
 }
 
@@ -19,6 +20,23 @@ header {
 }
 
 section {
-  background-color: black;
-  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*#art__one
+#art__two,
+#art__three,
+#art__four,
+#art__five,
+#art__six,
+#art__seven,*/
+
+article { 
+  margin: auto;
+  margin-top: 2rem;
+  background-color: #a8a7a7;
+  height: 30rem;
+  width: 23%;
+
 }

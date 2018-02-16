@@ -1,4 +1,4 @@
-@import 'reset.css';
+@import 'normalize.css';
 
 body {
 background-color: black;
@@ -30,10 +30,11 @@ a {
   text-decoration: none;
 }
 
-#header__bottom-right {
+h1 {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+  margin: 0;
 }
 
 h1 {
@@ -43,7 +44,7 @@ h1 {
   font-family: 'Cinzel', serif;
 }
 
-section {
+main {
   display: flex;
   flex-wrap: wrap;
 }
@@ -62,4 +63,70 @@ article {
   background-color: #ccbea0;
   height: 30rem;
   width: 23%;
+  min-width: 220px;
+}
+
+
+.header {
+  position: relative;
+  height: 33%;
+  background-image: url('images/hamilton.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__right {
+  padding: .5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header__right--views {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.header__right--num {
+  margin: 0;
+  font-size: 2.6rem;
+}
+
+.body {
+  padding: .5rem;
+}
+
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.body__top--date {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.body__website {
+  padding: 0.6rem;
+  margin: 1rem 0;
+  background-color: #a16526;
+  font-size: 1rem;
+}
+
+.body__playlist {
+  margin: 0.4rem 0;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+.body__attach--num {
+  color: green;
+  font-size: 2.2rem;
 }

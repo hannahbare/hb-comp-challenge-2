@@ -14,39 +14,58 @@ body {
 
 header {
   position: relative;
-  background-color: black;
-  color: #ccc;
+  border-bottom: 3px solid black;
+  color: #d8d8d8;
   font-size: 1.6rem;
-  height: 10rem;
+  height: 11.5rem;
 }
 
 #header__top {
   float: right;
-  padding-right: 1.5rem;
-  font-weight: bold;
+  padding: 1.2rem 1.2rem 0;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
-.header__username {
-  font-size: 1.3rem;
+.fa-user-circle,
+.fa-caret-down,
+.fa-headphones,
+.fa-ticket-alt,
+.fa-quote-right {
+  vertical-align: -3px;
+  height: 1.4rem;
+  color: #e7b923;
 }
 
-#header__bottom--left {
+.fa-user-circle {
+  color: #f8f8f8;
+}
+
+#header__bottom--links {
   position: absolute;
   bottom: 0rem;
-  padding: 0 0 1.5rem 1.5rem;
+  padding: 0 0 1rem 1rem;
+}
+
+#header__top:hover,
+.header__a:hover {
+  color: #f8f8f8;
 }
 
 a {
-  padding-right: 5rem;
+  padding-right: 3rem;
   color: #ccc;
-  font-weight: bold;
   text-decoration: none;
 }
 
-/*.header__svg {
-  background-image: url('imgs/white.svg');
-  z-index: 2;
-}*/
+.header__clicked {
+  color: #f8f8f8;
+  font-weight: bold;
+}
+
+.header__a {
+  padding-left: .3rem;
+}
 
 h1 {
   position: absolute;
@@ -54,15 +73,15 @@ h1 {
   bottom: 0;
   display: inline-block;
   margin: 0;
-  padding: 0 1rem 1rem;
+  padding: 0 1rem 0.8rem;
   font-family: 'Cinzel', serif;
 }
 
 h2 {
   margin: 0;
-  padding-top: 2rem 0 0 1rem;
-  color: #e0e0e0;
-  font-size: 3rem;
+  padding: 2.4rem 0 0 1rem;
+  color: #f8f8f8;
+  font-size: 3.6rem;
   height: 6rem;
 }
 
@@ -88,6 +107,15 @@ article {
   background-repeat: no-repeat;
   background-size: cover;
   height: 36%;
+}
+
+.share {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 2rem;
+  width: 2rem;
+
 }
 
 #art--one {
@@ -120,6 +148,17 @@ article {
 
 #art--eight {
   background-image: url('imgs/hurcules-2.png');
+}
+
+#art--one:hover,
+#art--two:hover,
+#art--three:hover,
+#art--four:hover,
+#art--five:hover,
+#art--six:hover,
+#art--seven:hover,
+#art--eight:hover {
+  background-image: url('imgs/cinbun.png')
 }
 
 .header__right {

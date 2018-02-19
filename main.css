@@ -17,24 +17,23 @@ header {
   border-bottom: 3px solid black;
   color: #d8d8d8;
   font-size: 1.6rem;
-  height: 11.5rem;
+  height: 10.5rem;
 }
 
 #header__top {
   float: right;
-  padding: 1.2rem 1.2rem 0;
+  padding-right: 1.2rem;
   font-size: 1.4rem;
   cursor: pointer;
 }
 
 .fa-user-circle,
 .fa-caret-down,
-.fa-headphones,
-.fa-ticket-alt,
-.fa-quote-right {
+.link__icon {
   vertical-align: -3px;
   height: 1.4rem;
-  color: #e7b923;
+  /*color: #e7b923;*/
+  color: black;
 }
 
 .fa-user-circle {
@@ -67,6 +66,16 @@ a {
   padding-left: .3rem;
 }
 
+.menu {
+  display: none;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: black;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
 h1 {
   position: absolute;
   right: 0;
@@ -96,7 +105,6 @@ article {
   border: 2px solid black;
   margin-top: 2rem;
   background-color: black;
-  /*background-color: #606060;*/
   height: 31rem;
   min-width: 280px;
   width: 23.5%;
@@ -106,7 +114,7 @@ article {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 36%;
+  height: 12rem;
 }
 
 .share {
@@ -115,7 +123,6 @@ article {
   left: 1rem;
   height: 2rem;
   width: 2rem;
-
 }
 
 #art--one {
@@ -237,4 +244,89 @@ h4 {
 .footer__img {
   padding: 0 4rem;
   width: 100%;
+}
+
+@media (max-width: 1150px){
+  article { 
+    width: 30%;
+  }
+}
+
+@media (max-width: 930px){
+  h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 0 0 1rem;
+}
+
+@media (max-width: 850px){
+  article { 
+    width: 42%;
+  }
+}
+
+@media (max-width: 640px){
+  #header__top {
+    float: left;
+    padding: 4.5rem 0 0 1rem;
+/*    font-size: 1.4rem;
+    cursor: pointer;*/
+  }
+}
+@media (max-width: 560px){
+  article { 
+    width: 65%;
+  }
+}
+
+@media (max-width: 528px){
+  .link__icon {
+    display: none;
+  }
+}
+
+@media (max-width: 440px){
+  article { 
+    height: 22rem;
+  }
+
+  .header {
+    height: 10rem;
+  }
+
+  .body__info {
+    display: none;
+  }
+
+  h5 {
+    display: none;
+  }
+
+  h4 {
+    display: none;
+  }
+
+  .body__attach--num {
+    display: none;
+  }
+
+  .footer__img {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 405px){
+  h1 {
+    padding: 1rem 0 2rem 1rem;
+    font-size: 2rem;
+  }
+
+  #header__bottom--links {
+    display: none;
+  }
+
+  .menu {
+    display: inline-block;
+  }
 }

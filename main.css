@@ -102,11 +102,12 @@ main {
 }
 
 article { 
-  border: 2px solid black;
   margin-top: 2rem;
+  border: 2px solid black;
   background-color: black;
   height: 31rem;
   min-width: 280px;
+  overflow: hidden;
   width: 23.5%;
 }
 
@@ -213,8 +214,8 @@ h3 {
 }
 
 blockquote {
-  padding: 0.6rem;
   margin: 1.2rem 0;
+  padding: 0.6rem;
   background-color: #888888;
   color: #e0e0e0;
   font-size: 1rem;
@@ -270,10 +271,9 @@ h4 {
   #header__top {
     float: left;
     padding: 4.5rem 0 0 1rem;
-/*    font-size: 1.4rem;
-    cursor: pointer;*/
   }
 }
+
 @media (max-width: 560px){
   article { 
     width: 65%;
